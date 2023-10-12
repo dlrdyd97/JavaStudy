@@ -11,6 +11,8 @@ public class StudentTest {
 
         studentLee.showStudentInfo();
 
+        System.out.println(studentLee);
+
     }
 
 }

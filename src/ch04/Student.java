@@ -10,6 +10,14 @@ public class Student {
         System.out.println(studentId + "학번의 이름은 "+studentName+" 이고, 주소는 "+address+" 입니다.");
     }
 
+    public int getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
+    }
+
     public String getStudentName() {
         return studentName;
     }
