@@ -1,3 +1,5 @@
+package ch01;
+
 public class Order {
 
     int orderId;
@@ -5,5 +7,6 @@ public class Order {
     String sellerId;
     int productId;
     String orderDate;
+
 
 }

@@ -1,3 +1,5 @@
+package ch01;
+
 public class UserInfo {
 
     String userId;
@@ -5,6 +7,5 @@ public class UserInfo {
     String userName;
     String address;
     int phoneNumber;
-
 
 }
