@@ -6,6 +6,9 @@ public class Student {
     public String studentName;
     public int grade;
 
+    public Student(){
+        
+    }
     public Student(int studentNumber,String studentName,int grade){
         this.studentNumber=studentNumber;
         this.studentName=studentName;
