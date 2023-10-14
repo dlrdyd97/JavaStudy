@@ -1,11 +1,11 @@
 package ch15;
 
-public class Texi {
+public class Taxi {
 
     String name;
     int money;
 
-    public Texi(String name) {
+    public Taxi(String name) {
         this.name = name;
     }
 
@@ -13,7 +13,7 @@ public class Texi {
         this.money+=money;
     }
 
-    public void showTexiInfo(){
+    public void showTaxiInfo(){
         System.out.println(name+"택시 수입은 "+money+"원 입니다.");
     }
 

@@ -10,8 +10,8 @@ public class Person {
         this.money = money;
     }
 
-    public void takeTexi(Texi texi,int money){
-        texi.take(money);
+    public void takeTaxi(Taxi taxi, int money){
+        taxi.take(money);
         this.money-=money;
     }
 
