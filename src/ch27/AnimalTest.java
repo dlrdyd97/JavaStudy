@@ -11,6 +11,12 @@ public class AnimalTest {
         Animal animalT=new Tiger();
         Animal animalE=new Eagle();
 
+        Human human=new Human();
+        animal=human;
+        animal.move();
+        Human human1=(Human) animal; // 다운 캐스팅
+
+
         ArrayList<Animal> animalList=new ArrayList<>();
         animalList.add(animal);
         animalList.add(animalH);
