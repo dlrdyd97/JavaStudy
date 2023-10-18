@@ -1,4 +1,4 @@
-package ch25;
+package ch26;
 
 public class VIPCustomer extends Customer {
 
