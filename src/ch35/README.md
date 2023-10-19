@@ -43,7 +43,7 @@ toString() 메서드
 
 * toString()메서드 재정의 예
 
-```agsl
+```java
 class Book{
 	
 	private String title;
