@@ -3,7 +3,7 @@
 ## String 클래스
 
 - String 선언하기
-```
+```java
     String str1 = new String("abc");
     String str2 = "abc";
 ```
@@ -12,7 +12,7 @@
 
 - 힙 메모리는 생성될때마다 다른 주소 값을 가지지만, 상수 풀의 문자열은 모두 같은 주소 값을 가짐
 
-```
+```java
 public class StringTest {
 
 	public static void main(String[] args) {
@@ -33,7 +33,7 @@ public class StringTest {
 
 - String을 연결하면 기존의 String에 연결되는 것이 아닌 새로운 문자열이 생성됨 ( 메모리 낭비가 발생할 수도 )
 
-```
+```java
 public class StringTest2 {
 
 	public static void main(String[] args) {
@@ -64,7 +64,7 @@ public class StringTest2 {
 
 - toString() 메서드로 String반환
 
-```
+```java
 public class StringBuilderTest {
 
 	public static void main(String[] args) {
@@ -87,7 +87,7 @@ public class StringBuilderTest {
 
 - html, json 문자열을 만드는데 유용하게 사용할 수 있음
 
-```
+```java
 public class StringTextBlock {
 
 	public static void main(String[] args) {
