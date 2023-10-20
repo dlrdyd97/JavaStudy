@@ -8,7 +8,7 @@
 
 - Class.forName("클래스 이름") 메서드로 클래스를 동적으로 로드 함
 
-```
+```java
 Class c = Class.forName("java.lang.String");
 ```
 
