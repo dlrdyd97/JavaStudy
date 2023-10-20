@@ -13,12 +13,12 @@ Class c = Class.forName("java.lang.String");
 ```
 
 - 클래스 이름으로 직접 Class 클래스 가져오기
-```
+```java
 Class c = String.class;
 ```
 
 - 생성된 인스턴스에서 Class 클래스 가져오기
-```
+```java
 String s = new String();
 Class c = s.getClass();  //Object 메서드
 ```
@@ -48,7 +48,7 @@ Class c = s.getClass();  //Object 메서드
 - 일반적으로 자료형을 알고 있는 경우엔 사용하지 않음
 
 StringTest.java
-```
+```java
 public class StringTest {
 
 	public static void main(String[] args) throws ClassNotFoundException {
@@ -71,7 +71,7 @@ public class StringTest {
 ```
 
 Person.java
-```
+```java
 public class Person {
 	private String name;
 	private int age;
@@ -111,7 +111,7 @@ public class Person {
 
 ClassTest.java
 
-```
+```java
 public class ClassTest {
 
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException,
