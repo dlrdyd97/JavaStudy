@@ -22,6 +22,13 @@ public class AddTest {
         };
         sc1.makeString("김","익환");
 
+        StringConcat sc2=new StringConcat() {
+            @Override
+            public void makeString(String s1, String s2) {
+
+            }
+        };
+
     }
 
 }
