@@ -18,6 +18,9 @@ public class IntArrayStreamTest {
         System.out.println();
 
         Arrays.stream(arr).forEach(n-> System.out.print(n)); // 인자를 하나씩 꺼내서 , sout 해라
+        System.out.println();
+        System.out.println(Arrays.stream(arr).max().orElse(0));
+        System.out.println(Arrays.stream(arr).sum());
 
         System.out.println();
 
@@ -36,7 +39,13 @@ public class IntArrayStreamTest {
         Integer[] arr2={1,2,3,4,5};
         Stream<Integer> stream = Arrays.stream(arr2);
         int fdzz=Arrays.stream(arr2).mapToInt(n->n.intValue()).sum();
+        int fdzz2=stream.mapToInt(n->n.intValue()).max().orElse(0);
+        stream = Arrays.stream(arr2);
+        int fdzz3=stream.mapToInt(n->n.intValue()).max().orElse(0);
+
         System.out.println(fdzz);
+        System.out.println(fdzz2);
+        System.out.println(fdzz3);
 
         IntStream fd=Arrays.stream(arr);
         System.out.println(fd.max());
