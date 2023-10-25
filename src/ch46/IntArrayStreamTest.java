@@ -3,6 +3,7 @@ package ch46;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class IntArrayStreamTest {
 
@@ -27,9 +28,18 @@ public class IntArrayStreamTest {
         is=Arrays.stream(arr);
         System.out.println(is.sum());
 
+
         int[] numbers={1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         is=Arrays.stream(numbers);
         System.out.println(is.average().orElse(0));
+
+        Integer[] arr2={1,2,3,4,5};
+        Stream<Integer> stream = Arrays.stream(arr2);
+        int fdzz=Arrays.stream(arr2).mapToInt(n->n.intValue()).sum();
+        System.out.println(fdzz);
+
+        IntStream fd=Arrays.stream(arr);
+        System.out.println(fd.max());
 
 
     }
