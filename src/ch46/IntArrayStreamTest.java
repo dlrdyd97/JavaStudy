@@ -1,0 +1,37 @@
+package ch46;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
+public class IntArrayStreamTest {
+
+    public static void main(String[] args){
+
+        int[] arr={1,2,3,4,5};
+
+        for(int num:arr){
+            System.out.print(num);
+        }
+
+        System.out.println();
+
+        Arrays.stream(arr).forEach(n-> System.out.print(n)); // 인자를 하나씩 꺼내서 , sout 해라
+
+        System.out.println();
+
+        IntStream is = Arrays.stream(arr);
+        System.out.println(is.max());
+        is=Arrays.stream(arr); // 재사용하려면 초기화해야함. 초기화 안하면 에러 발생
+        System.out.println(is.average().orElse(0));
+        is=Arrays.stream(arr);
+        System.out.println(is.sum());
+
+        int[] numbers={1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        is=Arrays.stream(numbers);
+        System.out.println(is.average().orElse(0));
+
+
+    }
+
+}
