@@ -6,7 +6,7 @@ public class ArrayExceptionHandling {
 
         int[] arr={1,2,3,4,5};
         try {
-            for(int i=0;i<arr.length;i++){
+            for(int i=0;i<arr.length+1;i++){
                 System.out.println(arr[i]);
             }
         }catch (ArrayIndexOutOfBoundsException e){
