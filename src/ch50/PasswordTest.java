@@ -8,7 +8,7 @@ public class PasswordTest {
         return password;
     }
 
-    public void setPassword(String password) {
+    public void setPassword(String password) { // throws PasswordException
         if(password==null){
             throw new PasswordException("비밀번호는 null 일 수 없습니다.");
         }else if(password.length()<5){
