@@ -27,7 +27,7 @@
 ![iostream.png](iostream.png)
 
 - 스트림의 종류
-
+ 
 | 종류 | 예시 |
 | ------ | ------ |
 | 입력 스트림 | FileInputStream, FileReader, BufferedInputStream, BufferedReader 등 |
