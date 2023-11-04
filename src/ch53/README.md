@@ -85,7 +85,7 @@ public class FileInputStreamTest3 {
 
 	public static void main(String[] args) {
 		 		
-		try (FileInputStream fis = new FileInputStream("input2.txt")){
+		try (FileInputStream fis = new FileInputStream("input2.txt.txt")){
 			
 			byte[] bs = new byte[10];
 			int i;
