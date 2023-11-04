@@ -10,10 +10,11 @@ public class FileInputStreamTest3 {
         int i;
         try(FileInputStream fis=new FileInputStream("input2.txt")){
             byte[] bs=new byte[10];
-            while ((i=fis.read(bs))!=-1){
+            while ((i=fis.read(bs,1,9))!=-1){
 //                for (int ch:bs){
 //                    System.out.print((char)ch);
 //                }
+//                System.out.println();
                 for (int j=0;j<i;j++)
                     System.out.print((char)bs[j]);
                 System.out.println(" : "+i+"바이트 읽음");
