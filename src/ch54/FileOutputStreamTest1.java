@@ -7,7 +7,7 @@ public class FileOutputStreamTest1 {
 
     public static void main(String[] args){
 
-//        FileOutputStream fos=new FileOutputStream("output.txt",true) // true는 append 여부
+//        FileOutputStream fos=new FileOutputStream("output.txt",true) // true는  append 여부
 
         try(FileOutputStream fos=new FileOutputStream("output.txt")){
 
