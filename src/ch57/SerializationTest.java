@@ -2,7 +2,7 @@ package ch57;
 
 import java.io.*;
 
-class Person implements Serializable{
+class Person implements Externalizable{
     // implements Serializable
     // 직렬화는 인스턴스의 내용이 외부로 유출되는 것이므로 프로그래머가 해당 객체에 대한 직렬화 의도를 표시해야 함
     String name;
@@ -19,6 +19,20 @@ class Person implements Serializable{
     @Override
     public String toString() {
         return name+","+job;
+    }
+
+    @Override
+    public void writeExternal(ObjectOutput out) throws IOException {
+
+        out.writeUTF(name);
+        out.writeUTF(job);
+    }
+
+    @Override
+    public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+
+        name = in.readUTF();
+        job=in.readUTF();
     }
 }
 
