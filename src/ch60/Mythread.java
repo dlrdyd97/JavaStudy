@@ -1,6 +1,6 @@
 package ch60;
 
-public class Mythread extends Thread{
+public class Mythread implements Runnable{
     @Override
     public void run() {
 
